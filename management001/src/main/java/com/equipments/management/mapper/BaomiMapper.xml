@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 为这个mapper指定一个唯一的namespace，namespace的值习惯上设置成包名+sql映射文件名，这样就能够保证namespace的值是唯一的
+例如namespace="me.gacl.mapping.userMapper"就是me.gacl.mapping(包名)+userMapper(userMapper.xml文件去除后缀)
+ -->
+<mapper namespace="com.equipments.management.mapper.BaomiMapper">
+
+    <resultMap id="baomiResultMap" type="com.equipments.management.domain.Baomi">
+        <id property="id" column="baomi_id"/>
+        <result property="buzhibie" column="baomi_buzhibie"/>
+        <result property="zhiji" column="baomi_zhiji"/>
+        <result property="xddzsblx1" column="baomi_xddzsblx1"/>
+        <result property="xddzsblx2" column="baomi_xddzsblx2"/>
+        <result property="xddzsbxh1" column="baomi_xddzsbxh1"/>
+        <result property="xddzsbxh2" column="baomi_xddzsbxh2"/>
+        <result property="xddzsbsmdj1" column="baomi_xddzsbsmdj1"/>
+        <result property="xddzsbsmdj2" column="baomi_xddzsbsmdj2"/>
+        <result property="xddzsbyf" column="baomi_xddzsbyf"/>
+        <result property="duihao1" column="baomi_duihao1"/>
+
+        <result property="xdsmzlmc1" column="baomi_xdsmzlmc1"/>
+        <result property="xdsmzlmc2" column="baomi_xdsmzlmc2"/>
+        <result property="xdsmzlfs1" column="baomi_xdsmzlfs1"/>
+        <result property="xdsmzlfs2" column="baomi_xdsmzlfs2"/>
+        <result property="xdsmzlsmdj1" column="baomi_xdsmzlsmdj1"/>
+        <result property="xdsmzlsmdj2" column="baomi_xdsmzlsmdj2"/>
+        <result property="xdsmzlyf" column="baomi_xdsmzlyf"/>
+        <result property="duihao2" column="baomi_duihao2"/>
+
+        <result column="baomi_jwtlbeg" jdbcType="DATE" property="jwtlbeg" javaType="java.util.Date" />
+        <result column="baomi_jwtlend" jdbcType="DATE" property="jwtlend" javaType="java.util.Date" />
+
+        <association property="staffid" column="staff_id"
+                     select="com.equipments.management.mapper.StaffMapper.getStaffById"
+                     javaType="com.equipments.management.domain.Staff"/>
+        <association property="taskid" column="task_id"
+                     select="com.equipments.management.mapper.TaskMapper.getTaskById"
+                     javaType="com.equipments.management.domain.Task"/>
+    </resultMap>
+
+
+    <select id="getAllBaomi" resultMap="baomiResultMap">
+        select * from eq_staff_baomi
+    </select>
+
+    <select id="getBaomiById" parameterType="Integer"
+            resultMap="baomiResultMap">
+        select * from eq_staff_baomi where baomi_id=#{id}
+    </select>
+
+    <insert id="addBaomi" parameterType="com.equipments.management.domain.Baomi"
+            useGeneratedKeys="true" keyProperty="id">
+        insert into eq_staff_baomi(baomi_buzhibie,baomi_zhiji,baomi_xddzsblx1,baomi_xddzsblx2,baomi_xddzsbxh1,baomi_xddzsbxh2,baomi_xddzsbsmdj1,baomi_xddzsbsmdj2,baomi_xddzsbyf,baomi_duihao1,baomi_xdsmzlmc1,baomi_xdsmzlmc2,baomi_xdsmzlfs1,baomi_xdsmzlfs2,baomi_xdsmzlsmdj1,baomi_xdsmzlsmdj2,baomi_xdsmzlyf,baomi_duihao2,baomi_jwtlbeg,baomi_jwtlend,task_id,staff_id)
+        values(#{buzhibie},#{zhiji},#{xddzsblx1},#{xddzsblx2},#{xddzsbxh1},#{xddzsbxh2},#{xddzsbsmdj1},#{xddzsbsmdj2},#{xddzsbyf},#{duihao1},#{xdsmzlmc1},#{xdsmzlmc2},#{xdsmzlfs1},#{xdsmzlfs2},#{xdsmzlsmdj1},#{xdsmzlsmdj2},#{xdsmzlyf},#{duihao2},#{jwtlbeg,jdbcType=DATE},#{jwtlend,jdbcType=DATE},#{taskid.id},#{staffid.id})
+    </insert>
+    <delete id="removeBaomiById" parameterType="Integer">
+        delete from eq_staff_baomi where baomi_id = #{id}
+    </delete>
+
+        <select id="getBaomiByAll" resultMap="baomiResultMap">
+            select * from eq_staff_baomi
+            <where>
+                <if test="id !=null">baomi_id=#{id}</if>
+                <if test="staffid !=null and staffid.id !=null">AND staff_id=#{staffid.id}</if>
+                <if test="taskid !=null and taskid.id !=null">AND task_id=#{taskid.id}</if>
+
+                <if test="buzhibie !=null">AND baomi_buzhibie=#{buzhibie}</if>
+                <if test="zhiji !=null">AND baomi_zhiji=#{zhiji}</if>
+                <if test="xddzsblx1 !=null">AND baomi_xddzsblx1=#{xddzsblx1}</if>
+                <if test="xddzsblx2 !=null">AND baomi_xddzsblx2=#{xddzsblx2}</if>
+                <if test="xddzsbxh1 !=null">AND baomi_xddzsbxh1=#{xddzsbxh1}</if>
+                <if test="xddzsbxh2 !=null">AND baomi_xddzsbxh2=#{xddzsbxh2}</if>
+                <if test="xddzsbsmdj1 !=null">AND baomi_xddzsbsmdj1=#{xddzsbsmdj1}</if>
+                <if test="xddzsbsmdj2 !=null">AND baomi_xddzsbsmdj2=#{xddzsbsmdj2}</if>
+                <if test="xddzsbyf !=null">AND baomi_xddzsbyf=#{xddzsbyf}</if>
+                <if test="duihao1 !=null">AND baomi_duihao1=#{duihao1}</if>
+
+                <if test="xdsmzlmc1 !=null">AND baomi_xdsmzlmc1=#{xdsmzlmc1}</if>
+                <if test="xdsmzlmc2 !=null">AND baomi_xdsmzlmc2=#{xdsmzlmc2}</if>
+                <if test="xdsmzlfs1 !=null">AND baomi_xdsmzlfs1=#{xdsmzlfs1}</if>
+                <if test="xdsmzlfs2 !=null">AND baomi_xdsmzlfs2=#{xdsmzlfs2}</if>
+                <if test="xdsmzlsmdj1 !=null">AND baomi_xdsmzlsmdj1=#{xdsmzlsmdj1}</if>
+                <if test="xdsmzlsmdj2 !=null">AND baomi_xdsmzlsmdj2=#{xdsmzlsmdj2}</if>
+                <if test="xdsmzlyf !=null">AND baomi_xdsmzlyf=#{xdsmzlyf}</if>
+                <if test="duihao2 !=null">AND baomi_duihao2=#{duihao2}</if>
+
+
+                <if test="jwtlbeg != null">
+                    <![CDATA[ and date(baomi_jwtlbeg) = date(#{jwtlbeg,jdbcType=DATE})]]>
+                </if>
+                <if test="jwtlend != null">
+                    <![CDATA[ and date(baomi_jwtlend) = date(#{jwtlend,jdbcType=DATE})]]>
+                </if>
+            </where>
+        </select>
+
+
+        <update id="updateTask" parameterType="com.equipments.management.domain.Task">
+            update EQ_TASK
+            <trim prefix="set" suffixOverrides=",">
+                <if test="staffid !=null and staffid.id !=null">AND staff_id=#{staffid.id}</if>
+                <if test="taskid !=null and taskid.id !=null">AND task_id=#{taskid.id}</if>
+
+                <if test="buzhibie !=null">AND baomi_buzhibie=#{buzhibie}</if>
+                <if test="zhiji !=null">AND baomi_zhiji=#{zhiji}</if>
+                <if test="xddzsblx1 !=null">AND baomi_xddzsblx1=#{xddzsblx1}</if>
+                <if test="xddzsblx2 !=null">AND baomi_xddzsblx2=#{xddzsblx2}</if>
+                <if test="xddzsbxh1 !=null">AND baomi_xddzsbxh1=#{xddzsbxh1}</if>
+                <if test="xddzsbxh2 !=null">AND baomi_xddzsbxh2=#{xddzsbxh2}</if>
+                <if test="xddzsbsmdj1 !=null">AND baomi_xddzsbsmdj1=#{xddzsbsmdj1}</if>
+                <if test="xddzsbsmdj2 !=null">AND baomi_xddzsbsmdj2=#{xddzsbsmdj2}</if>
+                <if test="xddzsbyf !=null">AND baomi_xddzsbyf=#{xddzsbyf}</if>
+                <if test="duihao1 !=null">AND baomi_duihao1=#{duihao1}</if>
+
+                <if test="xdsmzlmc1 !=null">AND baomi_xdsmzlmc1=#{xdsmzlmc1}</if>
+                <if test="xdsmzlmc2 !=null">AND baomi_xdsmzlmc2=#{xdsmzlmc2}</if>
+                <if test="xdsmzlfs1 !=null">AND baomi_xdsmzlfs1=#{xdsmzlfs1}</if>
+                <if test="xdsmzlfs2 !=null">AND baomi_xdsmzlfs2=#{xdsmzlfs2}</if>
+                <if test="xdsmzlsmdj1 !=null">AND baomi_xdsmzlsmdj1=#{xdsmzlsmdj1}</if>
+                <if test="xdsmzlsmdj2 !=null">AND baomi_xdsmzlsmdj2=#{xdsmzlsmdj2}</if>
+                <if test="xdsmzlyf !=null">AND baomi_xdsmzlyf=#{xdsmzlyf}</if>
+                <if test="duihao2 !=null">AND baomi_duihao2=#{duihao2}</if>
+
+
+                <if test="jwtlbeg != null">
+                    <![CDATA[ and date(baomi_jwtlbeg) = date(#{jwtlbeg,jdbcType=DATE})]]>
+                </if>
+                <if test="jwtlend != null">
+                    <![CDATA[ and date(baomi_jwtlend) = date(#{jwtlend,jdbcType=DATE})]]>
+                </if>
+            </trim>
+            where baomi_id=#{id}
+        </update>
+</mapper>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 为这个mapper指定一个唯一的namespace，namespace的值习惯上设置成包名+sql映射文件名，这样就能够保证namespace的值是唯一的
+例如namespace="me.gacl.mapping.userMapper"就是me.gacl.mapping(包名)+userMapper(userMapper.xml文件去除后缀)
+ -->
+<mapper namespace="com.equipments.management.mapper.ChuxingMapper">
+
+    <resultMap id="chuxingResultMap" type="com.equipments.management.domain.Chuxing">
+        <id property="chuxingid" column="chuxing_id"/>
+
+        <association property="staffid" column="staff_id"
+                     select="com.equipments.management.mapper.StaffMapper.getStaffById"
+                     javaType="com.equipments.management.domain.Staff"/>
+        <association property="taskid" column="task_id"
+                     select="com.equipments.management.mapper.TaskMapper.getTaskById"
+                     javaType="com.equipments.management.domain.Task"/>
+    </resultMap>
+
+
+    <select id="getAllChuxing" resultMap="chuxingResultMap">
+        select * from chuxing
+    </select>
+
+    <select id="getChuxingById" parameterType="Integer"
+            resultMap="chuxingResultMap">
+        select * from chuxing where chuxing_id=#{chuxingid}
+    </select>
+
+    <insert id="addChuxing" parameterType="com.equipments.management.domain.Chuxing"
+            useGeneratedKeys="true" keyProperty="chuxingid">
+        insert into EQ_TASK(task_id,staff_id)
+        values(#{taskid.id},#{staffid.id})
+    </insert>
+    <delete id="removeChuxingById" parameterType="Integer">
+        delete from chuxing where chuxing_id = #{chuxingid}
+    </delete>
+
+        <select id="getChuxingByAll" resultMap="chuxingResultMap">
+            select * from chuxing
+            <where>
+                <if test="chuxingid !=null">chuxing_id=#{chuxingid}</if>
+                <if test="taskid !=null and taskid.id !=null">AND task_id=#{taskid.id}</if>
+                <if test="staffid !=null and staffid.id !=null">AND staff_id=#{staffid.id}</if>
+            </where>
+        </select>
+
+
+        <update id="updateChuxing" parameterType="com.equipments.management.domain.Chuxing">
+            update chuxing
+            <trim prefix="set" suffixOverrides=",">
+                <if test="taskid !=null and taskid.id !=null">AND task_id=#{taskid.id}</if>
+                <if test="staffid !=null and staffid.id !=null">AND staff_id=#{staffid.id}</if>
+            </trim>
+            where chuxing_id=#{chuxingid}
+        </update>
+</mapper>

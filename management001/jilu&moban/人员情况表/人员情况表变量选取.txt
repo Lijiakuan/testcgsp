@@ -1,0 +1,33 @@
+﻿人员情况表中的变量
+姓名：      ${name}
+性别：      ${gender}
+出生日期：  ${birthyday}
+出生地点：  ${birthplace}
+民 族：		${nation}
+文化程度:   ${educationle}
+职务或职称: ${qkbzwhzc}
+军衔或级别: ${qkbjxhjb}
+政治面貌:   ${zzmianmao}
+何年何月毕业: ${bysjbyyx}
+外语水平:    ${wgysp}
+军官证或文职干部证号   ${jgzid} 
+联系电话    ${phone}
+有无护照    ${ywhuzhao}
+护照号/有效期至      ${huzhaohao}  ${huzhaoyouxiaoqi}
+起止年月    ${gzjlsj001}  ${gzjlsj002}  ${gzjlsj003} ${gzjlsj004} ${gzjlsj005}
+工作单位职务 ${gzjlcsgzjzw001}  ${gzjlcsgzjzw002}  ${gzjlcsgzjzw003}  ${gzjlcsgzjzw004} ${gzjlcsgzjzw005}
+
+近二年出国（境）情况：
+时间： ${cgqksj001} ${cgqksj002} ${cgqksj003}
+赴何国（地区）执行：${cgqkgjjrw001} ${cgqkgjjrw002} ${cgqkgjjrw003}
+对外身份： ${cgqkdwsf001} ${cgqkdwsf002} ${cgqkdwsf003}
+
+家庭成员情况:
+姓名	     ${jtqkxm001} ${jtqkxm002}  ${jtqkxm003}
+与本人关系：  ${jtqkgx001} ${jtqkgx002} ${jtqkgx003}
+工作单位及职务 ${jtqkgzjzw001} ${jtqkgzjzw002} ${jtqkgzjzw003}
+是否在国外     ${jtqkgwf001} ${jtqkgwf002} ${jtqkgwf003}
+
+承办单位：  ${department}
+联系人		${swscmxm}
+电话：      ${swscmdh} 

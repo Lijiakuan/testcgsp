@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 为这个mapper指定一个唯一的namespace，namespace的值习惯上设置成包名+sql映射文件名，这样就能够保证namespace的值是唯一的
+例如namespace="me.gacl.mapping.userMapper"就是me.gacl.mapping(包名)+userMapper(userMapper.xml文件去除后缀)
+ -->
+<mapper namespace="com.equipments.management.mapper.Hbtask2Mapper">
+
+    <resultMap id="hbtask2ResultMap" type="com.equipments.management.domain.Hbtask2">
+        <id property="taskhbid2" column="taskhb_id2"/>
+        <result property="name" column="taskhb_name"/>
+        <result property="tarcountry" column="taskhb_tarcountry"/>
+        <result property="tarcity" column="taskhb_tarcity"/>
+        <result property="type" column="taskhb_type"/>
+        <result property="zhuangtai" column="taskhb_zhuangtai"/>
+        <result property="beizhu" column="taskhb_beizhu"/>
+        <result property="significance" column="taskhb_significance"/>
+        <result property="chengpijian001" column="taskhb_chengpijian001"/>
+        <result property="chengpijian002" column="taskhb_chengpijian002"/>
+        <result property="chengpijian003" column="taskhb_chengpijian003"/>
+
+        <result column="taskhb_cjcfbeg" jdbcType="DATE" property="cjcfbeg" javaType="java.util.Date" />
+        <result column="taskhb_cjggend" jdbcType="DATE" property="cjggend" javaType="java.util.Date" />
+        <result column="taskhb_lijingbeg" jdbcType="DATE" property="lijingbeg" javaType="java.util.Date" />
+        <result column="taskhb_rujingend" jdbcType="DATE" property="rujingend" javaType="java.util.Date" />
+        <result column="taskhb_cjsj" jdbcType="DATE" property="cjsj" javaType="java.util.Date" />
+        <result column="taskhb_xgsj" jdbcType="DATE" property="xgsj" javaType="java.util.Date" />
+
+    </resultMap>
+
+
+    <select id="getAllHbtask2" resultMap="hbtask2ResultMap">
+        select * from hb_task2
+    </select>
+
+    <select id="getHbtask2ById" parameterType="Integer"
+            resultMap="hbtask2ResultMap">
+        select * from hb_task2 where taskhb_id2=#{taskhbid2}
+    </select>
+
+    <insert id="addHbtask2" parameterType="com.equipments.management.domain.Hbtask2"
+            useGeneratedKeys="true" keyProperty="taskhbid2">
+        insert into hb_task2(taskhb_name,taskhb_tarcountry,taskhb_tarcity,taskhb_type,taskhb_zhuangtai,taskhb_beizhu,taskhb_significance,taskhb_chengpijian001,taskhb_chengpijian002,taskhb_chengpijian003,taskhb_cjcfbeg,taskhb_cjggend,taskhb_lijingbeg,taskhb_rujingend,taskhb_cjsj,taskhb_xgsj)
+        values(#{name},#{tarcountry},#{tarcity},#{type},#{zhuangtai},#{beizhu},#{significance},#{chengpijian001},#{chengpijian002},#{chengpijian003},#{cjcfbeg,jdbcType=DATE},#{cjggend,jdbcType=DATE},#{lijingbeg,jdbcType=DATE},#{rujingend,jdbcType=DATE},#{cjsj,jdbcType=DATE},#{xgsj,jdbcType=DATE})
+    </insert>
+    <delete id="removeHbtask2ById" parameterType="Integer">
+        delete from hb_task2 where taskhb_id2 = #{taskhbid2}
+    </delete>
+
+    <select id="getHbtask2ByAll" resultMap="hbtask2ResultMap">
+        select * from hb_task2
+        <where>
+            <if test="taskhbid2 !=null">taskhb_id2=#{taskhbid2}</if>
+            <if test="name !=null">AND taskhb_name=#{name}</if>
+            <if test="tarcountry !=null">AND taskhb_tarcountry=#{tarcountry}</if>
+            <if test="tarcity !=null">AND taskhb_tarcity=#{tarcity}</if>
+            <if test="type !=null">AND taskhb_type=#{type}</if>
+            <if test="zhuangtai !=null">AND taskhb_zhuangtai=#{zhuangtai}</if>
+            <if test="beizhu !=null">AND taskhb_beizhu=#{beizhu}</if>
+            <if test="significance !=null">AND taskhb_significance=#{significance}</if>
+            <if test="chengpijian001 !=null">AND taskhb_chengpijian001=#{chengpijian001}</if>
+            <if test="chengpijian002 !=null">AND taskhb_chengpijian002=#{chengpijian002}</if>
+            <if test="chengpijian003 !=null">AND taskhb_chengpijian003=#{chengpijian003}</if>
+
+            <if test="cjcfbeg != null">
+                <![CDATA[ and date(taskhb_cjcfbeg) = date(#{cjcfbeg,jdbcType=DATE})]]>
+            </if>
+            <if test="cjggend != null">
+                <![CDATA[ and date(taskhb_cjggend) = date(#{cjggend,jdbcType=DATE})]]>
+            </if>
+            <if test="lijingbeg != null">
+                <![CDATA[ and date(taskhb_lijingbeg) = date(#{lijingbeg,jdbcType=DATE})]]>
+            </if>
+            <if test="rujingend != null">
+                <![CDATA[ and date(taskhb_rujingend) = date(#{rujingend,jdbcType=DATE})]]>
+            </if>
+            <if test="cjsj != null">
+                <![CDATA[ and date(taskhb_cjsj) = date(#{cjsj,jdbcType=DATE})]]>
+            </if>
+            <if test="xgsj != null">
+                <![CDATA[ and date(taskhb_xgsj) = date(#{xgsj,jdbcType=DATE})]]>
+            </if>
+        </where>
+    </select>
+
+
+    <update id="updateHbtask1" parameterType="com.equipments.management.domain.Hbtask1">
+        update hb_task1
+        <trim prefix="set" suffixOverrides=",">
+            <if test="name !=null">AND taskhb_name=#{name}</if>
+            <if test="tarcountry !=null">AND taskhb_tarcountry=#{tarcountry}</if>
+            <if test="tarcity !=null">AND taskhb_tarcity=#{tarcity}</if>
+            <if test="type !=null">AND taskhb_type=#{type}</if>
+            <if test="zhuangtai !=null">AND taskhb_zhuangtai=#{zhuangtai}</if>
+            <if test="beizhu !=null">AND taskhb_beizhu=#{beizhu}</if>
+            <if test="significance !=null">AND taskhb_significance=#{significance}</if>
+            <if test="chengpijian001 !=null">AND taskhb_chengpijian001=#{chengpijian001}</if>
+            <if test="chengpijian002 !=null">AND taskhb_chengpijian002=#{chengpijian002}</if>
+            <if test="chengpijian003 !=null">AND taskhb_chengpijian003=#{chengpijian003}</if>
+
+            <if test="cjcfbeg != null">
+                <![CDATA[ and date(taskhb_cjcfbeg) = date(#{cjcfbeg,jdbcType=DATE})]]>
+            </if>
+            <if test="cjggend != null">
+                <![CDATA[ and date(taskhb_cjggend) = date(#{cjggend,jdbcType=DATE})]]>
+            </if>
+            <if test="lijingbeg != null">
+                <![CDATA[ and date(taskhb_lijingbeg) = date(#{lijingbeg,jdbcType=DATE})]]>
+            </if>
+            <if test="rujingend != null">
+                <![CDATA[ and date(taskhb_rujingend) = date(#{rujingend,jdbcType=DATE})]]>
+            </if>
+            <if test="cjsj != null">
+                <![CDATA[ and date(taskhb_cjsj) = date(#{cjsj,jdbcType=DATE})]]>
+            </if>
+            <if test="xgsj != null">
+                <![CDATA[ and date(taskhb_xgsj) = date(#{xgsj,jdbcType=DATE})]]>
+            </if>
+        </trim>
+        where taskhb_id2=#{taskhbid2}
+    </update>
+</mapper>

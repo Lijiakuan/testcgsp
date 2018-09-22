@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 为这个mapper指定一个唯一的namespace，namespace的值习惯上设置成包名+sql映射文件名，这样就能够保证namespace的值是唯一的
+例如namespace="me.gacl.mapping.userMapper"就是me.gacl.mapping(包名)+userMapper(userMapper.xml文件去除后缀)
+ -->
+<mapper namespace="com.equipments.management.mapper.DepartmentMapper">
+
+    <!-- 
+        根据id查询得到一个user对象
+     -->
+    <resultMap id="departmentResultMap" type="com.equipments.management.domain.Department">
+        <id property="id" column="DEPARTMENT_ID"/>
+        <result property="name" column="DEPARTMENT_NAME"/>
+        <result property="cate" column="DEPARTMENT_CATE"/>
+    </resultMap>
+
+    <!--
+        根据id值查询得到Department
+    -->
+    <select id="getDepartmentById" parameterType="Integer"
+            resultMap="departmentResultMap">
+        select * from eq_department where DEPARTMENT_ID=#{id}
+    </select>
+    <select id="getAllDepartments" resultMap="departmentResultMap">
+        select * from eq_department
+    </select>
+
+
+    <insert id="addDepartment" parameterType="com.equipments.management.domain.Department"
+            useGeneratedKeys="true" keyProperty="no">
+        insert into eq_department(DEPARTMENT_ID,DEPARTMENT_NAME,DEPARTMENT_CATE)
+        values(#{id},#{name},#{cate})
+    </insert>
+    <delete id="removeDepartmentById" parameterType="Integer">
+        delete from eq_department where DEPARTMENT_ID = #{id}
+    </delete>
+
+    <!--获得指定条件的List<Department>-->
+    <select id="getDepartmentByAll" resultMap="departmentResultMap">
+        select * from eq_department
+        <where>
+            <if test="id !=null">DEPARTMENT_ID=#{id}</if>
+            <if test="name !=null">and DEPARTMENT_NAME=#{name}</if>
+            <if test="cate !=null">and DEPARTMENT_CATE=#{cate}</if>
+        </where>
+    </select>
+
+
+    <!--
+    waiting
+    -->
+    <!--获得指定条件的Department-->
+    <update id="updateDepartment">
+        update eq_department
+        <set>
+            <if test="name !=null">DEPARTMENT_NAME=#{name}</if>
+            <if test="cate !=null">DEPARTMENT_CATE=#{cate}</if>
+        </set>
+        where DEPARTMENT_ID=#{id}
+    </update>
+
+</mapper>

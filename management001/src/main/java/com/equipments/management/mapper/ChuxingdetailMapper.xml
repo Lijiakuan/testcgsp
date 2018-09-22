@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 为这个mapper指定一个唯一的namespace，namespace的值习惯上设置成包名+sql映射文件名，这样就能够保证namespace的值是唯一的
+例如namespace="me.gacl.mapping.userMapper"就是me.gacl.mapping(包名)+userMapper(userMapper.xml文件去除后缀)
+ -->
+<mapper namespace="com.equipments.management.mapper.ChuxingdetailMapper">
+
+    <resultMap id="chuxingdetailResultMap" type="com.equipments.management.domain.Chuxingdetail">
+        <id property="chuxingdetailid" column="chuxingdetail_id"/>
+        <result property="chuxingcontent" column="chuxing_content"/>
+
+        <result column="chuxing_shijian" jdbcType="DATE" property="chuxingshijian" javaType="java.util.Date" />
+
+        <association property="chuxingid" column="chuxing_id"
+                     select="com.equipments.management.mapper.ChuxingMapper.getChuxingById"
+                     javaType="com.equipments.management.domain.Chuxing"/>
+    </resultMap>
+
+
+    <select id="getAllChuxingdetail" resultMap="chuxingdetailResultMap">
+        select * from chuxingdetail
+    </select>
+
+    <select id="getChuxingdetailById" parameterType="Integer"
+            resultMap="chuxingdetailResultMap">
+        select * from chuxingdetail where chuxingdetail_id=#{chuxingdetailid}
+    </select>
+
+    <insert id="addChuxingdetail" parameterType="com.equipments.management.domain.Chuxingdetail"
+            useGeneratedKeys="true" keyProperty="chuxingdetailid">
+        insert into chuxingdetail(chuxing_content,chuxing_shijian,chuxing_id)
+        values(#{chuxingcontent},#{chuxingshijian,jdbcType=DATE},#{chuxingid.chuxingid})
+    </insert>
+    <delete id="removeChuxingdetailById" parameterType="Integer">
+        delete from chuxingdetail where chuxing_id = #{chuxingid}
+    </delete>
+
+        <select id="getChuxingdetailByAll" resultMap="chuxingdetailResultMap">
+            select * from chuxingdetail
+            <where>
+                <if test="chuxingdetailid !=null">chuxingdetail_id=#{chuxingdetailid}</if>
+                <if test="chuxingid !=null and chuxingid.chuxingid !=null">AND chuxing_id=#{chuxingid.chuxingid}</if>
+                <if test="chuxingcontent !=null">AND chuxing_content=#{chuxingcontent}</if>
+
+                <if test="chuxingshijian != null">
+                    <![CDATA[ and date(chuxing_shijian) = date(#{chuxingshijian,jdbcType=DATE})]]>
+                </if>
+            </where>
+        </select>
+
+
+        <update id="updateTask" parameterType="com.equipments.management.domain.Task">
+            update EQ_TASK
+            <trim prefix="set" suffixOverrides=",">
+                <if test="chuxingid !=null and chuxingid.chuxingid !=null">AND chuxing_id=#{chuxingid.chuxingid}</if>
+                <if test="chuxingcontent !=null">AND chuxing_content=#{chuxingcontent}</if>
+
+                <if test="chuxingshijian != null">
+                    <![CDATA[ and date(chuxing_shijian) = date(#{chuxingshijian,jdbcType=DATE})]]>
+                </if>
+            </trim>
+            where chuxingdetail_id=#{chuxingdetailid}
+        </update>
+</mapper>

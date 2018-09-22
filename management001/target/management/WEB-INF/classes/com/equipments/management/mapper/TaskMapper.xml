@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 为这个mapper指定一个唯一的namespace，namespace的值习惯上设置成包名+sql映射文件名，这样就能够保证namespace的值是唯一的
+例如namespace="me.gacl.mapping.userMapper"就是me.gacl.mapping(包名)+userMapper(userMapper.xml文件去除后缀)
+ -->
+<mapper namespace="com.equipments.management.mapper.TaskMapper">
+
+    <resultMap id="taskResultMap" type="com.equipments.management.domain.Task">
+        <id property="id" column="staff_id"/>
+        <result property="loginname" column="staff_loginname"/>
+        <result property="password" column="staff_password"/>
+        <result property="name" column="staff_name"/>
+        <result property="gender" column="staff_gender"/>
+        <result property="zhiwu" column="staff_zhiwu"/>
+        <result property="zhicheng" column="staff_zhicheng"/>
+        <result property="jishudengji" column="staff_jishudengji"/>
+        <result property="junxian" column="staff_junxian"/>
+        <result property="jsjjunxian" column="staff_jsjjunxian"/>
+        <result property="zhiwudengji" column="staff_zhiwudengji"/>
+        <result property="wenzhiji" column="staff_wenzhiji"/>
+        <result property="phone" column="staff_phone"/>
+        <result property="state" column="staff_state"/>
+        <result property="email" column="staff_email"/>
+        <result property="jgzid" column="staff_jgzid"/>
+        <result property="grade" column="staff_grade"/>
+        <result property="birthplace" column="staff_birthplace"/>
+        <result column="staff_birthyday" jdbcType="DATE" property="birthyday" javaType="java.util.Date" />
+
+        <association property="department" column="staff_department"
+                     select="com.equipments.management.mapper.DepartmentMapper.getDepartmentById"
+                     javaType="com.equipments.management.domain.Department"/>
+    </resultMap>
+
+
+    <select id="getAllStaff" resultMap="staffResultMap">
+        select * from EQ_STAFF
+    </select>
+
+    <select id="getStaffById" parameterType="Integer"
+            resultMap="staffResultMap">
+        select * from EQ_STAFF where staff_id=#{id}
+    </select>
+
+    <insert id="addStaff" parameterType="com.equipments.management.domain.Staff"
+            useGeneratedKeys="true" keyProperty="id">
+        insert into EQ_STAFF(staff_loginname,staff_password,staff_department,staff_name,staff_gender,staff_zhiwu,staff_zhicheng,staff_jishudengji,staff_junxian,staff_jsjjunxian,staff_zhiwudengji,staff_wenzhiji,staff_phone,staff_state,staff_email,staff_jgzid,staff_grade,staff_birthplace,staff_birthyday)
+        values(#{loginname},#{password},#{department.id},#{name},#{gender},#{zhiwu},#{zhicheng},#{jishudengji},#{junxian},#{jsjjunxian},#{zhiwudengji},#{wenzhiji},#{phone},#{state},#{email},#{jgzid},#{grade},#{birthplace},#{birthyday,jdbcType=DATE})
+    </insert>
+    <delete id="removeStaffById" parameterType="Integer">
+        delete from EQ_STAFF where staff_id = #{id}
+    </delete>
+
+        <select id="getStaffByAll" resultMap="staffResultMap">
+            select * from eq_staff
+            <where>
+                <if test="id !=null">staff_id=#{id}</if>
+                <if test="loginname !=null">AND staff_loginname=#{loginname}</if>
+                <if test="password !=null">AND staff_password=#{password}</if>
+                <if test="department !=null and department.id !=null">AND staff_department=#{department.id}</if>
+                <if test="name !=null">AND staff_name=#{name}</if>
+                <if test="gender !=null">AND staff_gender=#{gender}</if>
+                <if test="zhiwu !=null">AND staff_zhiwu=#{zhiwu}</if>
+                <if test="zhicheng !=null">AND staff_zhicheng=#{zhicheng}</if>
+                <if test="jishudengji !=null">AND staff_jishudengji=#{jishudengji}</if>
+                <if test="junxian !=null">AND staff_junxian=#{junxian}</if>
+                <if test="jsjjunxian !=null">AND staff_jsjjunxian=#{jsjjunxian}</if>
+                <if test="zhiwudengji !=null">AND staff_zhiwudengji=#{zhiwudengji}</if>
+
+                <if test="wenzhiji !=null">AND staff_wenzhiji=#{wenzhiji}</if>
+                <if test="phone !=null">AND staff_phone=#{phone}</if>
+                <if test="state !=null">AND staff_state=#{state}</if>
+
+                <if test="email !=null">AND staff_email=#{email}</if>
+                <if test="jgzid !=null">AND staff_jgzid=#{jgzid}</if>
+                <if test="grade !=null">AND staff_grade=#{grade}</if>
+                <if test="birthplace !=null">AND staff_birthplace=#{birthplace}</if>
+                <if test="birthyday != null">
+                    <![CDATA[ and date(staff_birthyday) = date(#{birthyday,jdbcType=DATE})]]>
+                </if>
+            </where>
+        </select>
+
+
+        <update id="updateStaff" parameterType="com.equipments.management.domain.Staff">
+            update EQ_STAFF
+            <trim prefix="set" suffixOverrides=",">
+                <if test="loginname !=null">AND staff_loginname=#{loginname}</if>
+                <if test="password !=null">AND staff_password=#{password}</if>
+                <if test="department !=null and department.id !=null">AND staff_department=#{department.id}</if>
+                <if test="name !=null">AND staff_name=#{name}</if>
+                <if test="gender !=null">AND staff_gender=#{gender}</if>
+                <if test="zhiwu !=null">AND staff_zhiwu=#{zhiwu}</if>
+                <if test="zhicheng !=null">AND staff_zhicheng=#{zhicheng}</if>
+                <if test="jishudengji !=null">AND staff_jishudengji=#{jishudengji}</if>
+                <if test="junxian !=null">AND staff_junxian=#{junxian}</if>
+                <if test="jsjjunxian !=null">AND staff_jsjjunxian=#{jsjjunxian}</if>
+                <if test="zhiwudengji !=null">AND staff_zhiwudengji=#{zhiwudengji}</if>
+
+                <if test="wenzhiji !=null">AND staff_wenzhiji=#{wenzhiji}</if>
+                <if test="phone !=null">AND staff_phone=#{phone}</if>
+                <if test="state !=null">AND staff_state=#{state}</if>
+
+                <if test="email !=null">AND staff_email=#{email}</if>
+                <if test="jgzid !=null">AND staff_jgzid=#{jgzid}</if>
+                <if test="grade !=null">AND staff_grade=#{grade}</if>
+                <if test="birthplace !=null">AND staff_birthplace=#{birthplace}</if>
+                <if test="birthyday != null">
+                    <![CDATA[ and date(staff_birthyday) = date(#{birthyday,jdbcType=DATE})]]>
+                </if>
+            </trim>
+            where staff_id=#{id}
+        </update>
+</mapper>

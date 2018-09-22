@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 为这个mapper指定一个唯一的namespace，namespace的值习惯上设置成包名+sql映射文件名，这样就能够保证namespace的值是唯一的
+例如namespace="me.gacl.mapping.userMapper"就是me.gacl.mapping(包名)+userMapper(userMapper.xml文件去除后缀)
+ -->
+<mapper namespace="com.equipments.management.mapper.TaskMapper">
+
+    <resultMap id="taskResultMap" type="com.equipments.management.domain.Task">
+        <id property="id" column="task_id"/>
+        <result property="name" column="task_name"/>
+        <result property="tarcountry" column="task_tarcountry"/>
+        <result property="tarcity" column="task_tarcity"/>
+        <result property="type" column="task_type"/>
+        <result property="purposemap" column="task_purposemap"/>
+        <result property="jiaoliutimu" column="task_jiaoliutimu"/>
+        <result property="significance" column="task_significance"/>
+        <result property="cgryqkbaddr" column="task_cgryqkbaddr"/>
+        <result property="bmzrsaddr" column="task_bmzrsaddr"/>
+        <result property="yqhaddrzw" column="task_yqhaddrzw"/>
+        <result property="yqhaddryw" column="task_yqhaddryw"/>
+        <result property="xcapzw" column="task_xcapzw"/>
+        <result property="xcapyw" column="task_xcapyw"/>
+        <result property="zhuangtai" column="task_zhuangtai"/>
+        <result property="beizhu" column="task_beizhu"/>
+
+        <result column="task_cjcfbeg" jdbcType="DATE" property="cjcfbeg" javaType="java.util.Date" />
+        <result column="task_cjggend" jdbcType="DATE" property="cjggend" javaType="java.util.Date" />
+        <result column="task_lijingshijian" jdbcType="DATE" property="lijingshijian" javaType="java.util.Date" />
+        <result column="task_rujingshijian" jdbcType="DATE" property="rujingshijian" javaType="java.util.Date" />
+        <result column="task_cjsj" jdbcType="DATE" property="cjsj" javaType="java.util.Date" />
+        <result column="task_xgsj" jdbcType="DATE" property="xgsj" javaType="java.util.Date" />
+
+        <association property="taskhbid1" column="taskhb_id1"
+                     select="com.equipments.management.mapper.Hbtask1Mapper.getHbtask1ById"
+                     javaType="com.equipments.management.domain.Hbtask1"/>
+    </resultMap>
+
+
+    <select id="getAllTask" resultMap="taskResultMap">
+        select * from EQ_TASK
+    </select>
+
+    <select id="getTaskById" parameterType="Integer"
+            resultMap="taskResultMap">
+        select * from EQ_TASK where task_id=#{id}
+    </select>
+
+    <insert id="addTask" parameterType="com.equipments.management.domain.Task"
+            useGeneratedKeys="true" keyProperty="id">
+        insert into EQ_TASK(task_name,task_tarcountry,task_tarcity,task_type,task_purposemap,task_jiaoliutimu,task_significance,task_cgryqkbaddr,task_bmzrsaddr,task_yqhaddrzw,task_yqhaddryw,task_xcapzw,task_xcapyw,task_zhuangtai,task_beizhu,task_cjcfbeg,task_cjggend,task_lijingshijian,task_rujingshijian,task_cjsj,task_xgsj,taskhb_id1)
+        values(#{name},#{tarcountry},#{tarcity},#{type},#{purposemap},#{jiaoliutimu},#{significance},#{cgryqkbaddr},#{bmzrsaddr},#{yqhaddrzw},#{yqhaddryw},#{xcapzw},#{xcapyw},#{zhuangtai},#{beizhu},#{cjcfbeg,jdbcType=DATE},#{cjggend,jdbcType=DATE},#{lijingshijian,jdbcType=DATE},#{rujingshijian,jdbcType=DATE},#{cjsj,jdbcType=DATE},#{xgsj,jdbcType=DATE},#{taskhbid1.taskhbid1})
+    </insert>
+    <delete id="removeTaskById" parameterType="Integer">
+        delete from EQ_TASK where task_id = #{id}
+    </delete>
+
+        <select id="getTaskByAll" resultMap="taskResultMap">
+            select * from EQ_TASK
+            <where>
+                <if test="id !=null">task_id=#{id}</if>
+                <if test="taskhbid1 !=null and taskhbid1.taskhbid1 !=null">AND taskhb_id1=#{taskhbid1.taskhbid1}</if>
+                <if test="name !=null">AND task_name=#{name}</if>
+                <if test="tarcountry !=null">AND task_tarcountry=#{tarcountry}</if>
+                <if test="tarcity !=null">AND task_tarcity=#{tarcity}</if>
+                <if test="type !=null">AND task_type=#{type}</if>
+                <if test="purposemap !=null">AND task_purposemap=#{purposemap}</if>
+                <if test="jiaoliutimu !=null">AND task_jiaoliutimu=#{jiaoliutimu}</if>
+                <if test="significance !=null">AND task_significance=#{significance}</if>
+                <if test="cgryqkbaddr !=null">AND task_cgryqkbaddr=#{cgryqkbaddr}</if>
+                <if test="bmzrsaddr !=null">AND task_bmzrsaddr=#{bmzrsaddr}</if>
+                <if test="yqhaddrzw !=null">AND task_yqhaddrzw=#{yqhaddrzw}</if>
+                <if test="yqhaddryw !=null">AND task_yqhaddryw=#{yqhaddryw}</if>
+                <if test="xcapzw !=null">AND task_xcapzw=#{xcapzw}</if>
+                <if test="xcapyw !=null">AND task_xcapyw=#{xcapyw}</if>
+
+                <if test="zhuangtai !=null">AND task_zhuangtai=#{zhuangtai}</if>
+                <if test="beizhu !=null">AND task_beizhu=#{beizhu}</if>
+
+
+                <if test="cjcfbeg != null">
+                    <![CDATA[ and date(task_cjcfbeg) = date(#{cjcfbeg,jdbcType=DATE})]]>
+                </if>
+                <if test="cjggend != null">
+                    <![CDATA[ and date(task_cjggend) = date(#{cjggend,jdbcType=DATE})]]>
+                </if>
+                <if test="lijingshijian != null">
+                    <![CDATA[ and date(task_lijingshijian) = date(#{lijingshijian,jdbcType=DATE})]]>
+                </if>
+                <if test="rujingshijian != null">
+                    <![CDATA[ and date(task_rujingshijian) = date(#{rujingshijian,jdbcType=DATE})]]>
+                </if>
+                <if test="cjsj != null">
+                    <![CDATA[ and date(task_cjsj) = date(#{cjsj,jdbcType=DATE})]]>
+                </if>
+                <if test="xgsj != null">
+                    <![CDATA[ and date(task_xgsj) = date(#{xgsj,jdbcType=DATE})]]>
+                </if>
+            </where>
+        </select>
+
+
+        <update id="updateTask" parameterType="com.equipments.management.domain.Task">
+            update EQ_TASK
+            <trim prefix="set" suffixOverrides=",">
+                <if test="taskhbid1 !=null and taskhbid1.taskhbid1 !=null">AND taskhb_id1=#{taskhbid1.taskhbid1}</if>
+                <if test="name !=null">AND task_name=#{name}</if>
+                <if test="tarcountry !=null">AND task_tarcountry=#{tarcountry}</if>
+                <if test="tarcity !=null">AND task_tarcity=#{tarcity}</if>
+                <if test="type !=null">AND task_type=#{type}</if>
+                <if test="purposemap !=null">AND task_purposemap=#{purposemap}</if>
+                <if test="jiaoliutimu !=null">AND task_jiaoliutimu=#{jiaoliutimu}</if>
+                <if test="significance !=null">AND task_significance=#{significance}</if>
+                <if test="cgryqkbaddr !=null">AND task_cgryqkbaddr=#{cgryqkbaddr}</if>
+                <if test="bmzrsaddr !=null">AND task_bmzrsaddr=#{bmzrsaddr}</if>
+                <if test="yqhaddrzw !=null">AND task_yqhaddrzw=#{yqhaddrzw}</if>
+                <if test="yqhaddryw !=null">AND task_yqhaddryw=#{yqhaddryw}</if>
+                <if test="xcapzw !=null">AND task_xcapzw=#{xcapzw}</if>
+                <if test="xcapyw !=null">AND task_xcapyw=#{xcapyw}</if>
+
+                <if test="zhuangtai !=null">AND task_zhuangtai=#{zhuangtai}</if>
+                <if test="beizhu !=null">AND task_beizhu=#{beizhu}</if>
+
+
+                <if test="cjcfbeg != null">
+                    <![CDATA[ and date(task_cjcfbeg) = date(#{cjcfbeg,jdbcType=DATE})]]>
+                </if>
+                <if test="cjggend != null">
+                    <![CDATA[ and date(task_cjggend) = date(#{cjggend,jdbcType=DATE})]]>
+                </if>
+                <if test="lijingshijian != null">
+                    <![CDATA[ and date(task_lijingshijian) = date(#{lijingshijian,jdbcType=DATE})]]>
+                </if>
+                <if test="rujingshijian != null">
+                    <![CDATA[ and date(task_rujingshijian) = date(#{rujingshijian,jdbcType=DATE})]]>
+                </if>
+                <if test="cjsj != null">
+                    <![CDATA[ and date(task_cjsj) = date(#{cjsj,jdbcType=DATE})]]>
+                </if>
+                <if test="xgsj != null">
+                    <![CDATA[ and date(task_xgsj) = date(#{xgsj,jdbcType=DATE})]]>
+                </if>
+            </trim>
+            where task_id=#{id}
+        </update>
+</mapper>

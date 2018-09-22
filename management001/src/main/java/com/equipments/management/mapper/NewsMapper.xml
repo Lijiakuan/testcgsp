@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 为这个mapper指定一个唯一的namespace，namespace的值习惯上设置成包名+sql映射文件名，这样就能够保证namespace的值是唯一的
+例如namespace="me.gacl.mapping.userMapper"就是me.gacl.mapping(包名)+userMapper(userMapper.xml文件去除后缀)
+ -->
+<mapper namespace="com.equipments.management.mapper.NewsMapper">
+
+    <resultMap id="newsResultMap" type="com.equipments.management.domain.News">
+        <id property="newsid" column="newsid"/>
+        <result property="newstitle" column="newstitle"/>
+        <result property="newcontent" column="newcontent"/>
+        <result column="newstime" jdbcType="DATE" property="newstime" javaType="java.util.Date" />
+    </resultMap>
+
+
+    <select id="getAllNews" resultMap="newsResultMap">
+        select * from news
+    </select>
+
+    <select id="getNewsById" parameterType="Integer"
+            resultMap="newsResultMap">
+        select * from news where newsid=#{newsid}
+    </select>
+
+    <insert id="addNews" parameterType="com.equipments.management.domain.News"
+            useGeneratedKeys="true" keyProperty="newsid">
+        insert into news(newstitle,newcontent,newstime)
+        values(#{newstitle},#{newcontent},#{newstime,jdbcType=DATE})
+    </insert>
+    <delete id="removeNewsById" parameterType="Integer">
+        delete from news where newsid = #{newsid}
+    </delete>
+
+        <select id="getNewsByAll" resultMap="newsResultMap">
+            select * from news
+            <where>
+                <if test="newsid !=null">newsid=#{newsid}</if>
+                <if test="newstitle !=null">AND newstitle=#{newstitle}</if>
+                <if test="newcontent !=null">AND newcontent=#{newcontent}</if>
+                <if test="newstime != null">
+                    <![CDATA[ and date(newstime) = date(#{newstime,jdbcType=DATE})]]>
+                </if>
+
+            </where>
+        </select>
+
+
+        <update id="updateChuxing" parameterType="com.equipments.management.domain.Chuxing">
+            update chuxing
+            <trim prefix="set" suffixOverrides=",">
+                <if test="newstitle !=null">AND newstitle=#{newstitle}</if>
+                <if test="newcontent !=null">AND newcontent=#{newcontent}</if>
+                <if test="newstime != null">
+                    <![CDATA[ and date(newstime) = date(#{newstime,jdbcType=DATE})]]>
+                </if>
+            </trim>
+            where newsid=#{newsid}
+        </update>
+</mapper>

@@ -1,0 +1,1119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="management:war exploded" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="16ce08df-f43c-452e-9088-c604797f2fc0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../src/main/webapp/img/icons/title.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../src/main/webapp/scmy.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../management.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/equipments/management/controller/EqController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../src/main/java/com/equipments/management/controller/EqController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/equipments/management/controller/EqdignosisController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/equipments/management/controller/EqpacceptsampleController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/equipments/management/controller/EqpaologydrawController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/equipments/management/controller/EqpatientappliController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/equipments/management/controller/EqproductController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/equipments/management/controller/EqshengyaoController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/equipments/management/controller/EqzhongyaoController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/equipments/management/domain/Acceptsample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/equipments/management/domain/Collectanatomy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/equipments/management/domain/Consultation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/equipments/management/domain/Department.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../src/main/java/com/equipments/management/domain/Department.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/equipments/management/domain/Diccollectanatomy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/equipments/management/domain/Dicinspmethod.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/equipments/management/domain/Doctoradvice.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/equipments/management/domain/Drawphotodesc.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/equipments/management/domain/Inspmethod.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/equipments/management/domain/Med.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/equipments/management/domain/Medquery.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/equipments/management/domain/Medsheng.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/equipments/management/domain/Medshengquery.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/equipments/management/domain/Pathologyaccept.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/equipments/management/domain/Pathologydiagnosis.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/equipments/management/domain/Pathologydiagnosisinfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/equipments/management/domain/Pathologydiagnosisreport.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/equipments/management/domain/Pathologydraw.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/equipments/management/domain/Pathologyreview.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/equipments/management/domain/Patientappli.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/equipments/management/domain/Patientappliresultdetail.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/equipments/management/domain/Patientinfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/equipments/management/domain/Patientinfodetail.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/equipments/management/domain/Product.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/equipments/management/domain/Reportphoto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/equipments/management/domain/Reviewdetail.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/equipments/management/domain/Samplephotodesc.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/equipments/management/domain/Staff.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../src/main/java/com/equipments/management/domain/Staff.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/equipments/management/domain/gradation/Acceptsample001.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/equipments/management/domain/gradation/Collectanatomy001.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/equipments/management/domain/gradation/DiagnosticDetailVO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/equipments/management/domain/gradation/DocsProductVO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/equipments/management/domain/gradation/Doctoradvice001.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/equipments/management/domain/gradation/Inspmethod001.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/equipments/management/domain/gradation/Pathologydiagnosis001.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/equipments/management/domain/gradation/Pathologydraw001.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/equipments/management/domain/gradation/PathologydrawVO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/equipments/management/domain/gradation/Pathologyreview001.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/equipments/management/domain/gradation/Patientappli001.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/equipments/management/domain/gradation/Patientinfo001.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/equipments/management/domain/gradation/Product001.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/equipments/management/domain/gradation/ProductVO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/equipments/management/domain/gradation/SampleVO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/equipments/management/domain/query/Patientappliquery.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/equipments/management/domain/query/Productquery.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/equipments/management/mapper/AcceptsampleMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/equipments/management/mapper/CollectanatomyMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/equipments/management/mapper/ConsultationMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/equipments/management/mapper/DepartmentMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../src/main/java/com/equipments/management/mapper/DepartmentMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/equipments/management/mapper/DiccollectanatomyMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/equipments/management/mapper/DicinspmethodMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/equipments/management/mapper/DocsProductMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/equipments/management/mapper/DoctoradviceMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/equipments/management/mapper/DrawphotodescMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/equipments/management/mapper/InspmethodMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/equipments/management/mapper/MedMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/equipments/management/mapper/PathologyacceptMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/equipments/management/mapper/PathologydiagnosisMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/equipments/management/mapper/PathologydrawMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/equipments/management/mapper/PathologyreviewMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/equipments/management/mapper/PatientappliMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/equipments/management/mapper/PatientinfoMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/equipments/management/mapper/ProductMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/equipments/management/mapper/ReportphotoMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/equipments/management/mapper/ReviewdetailMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/equipments/management/mapper/SamplephotodescMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/equipments/management/mapper/StaffMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../src/main/java/com/equipments/management/mapper/StaffMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/equipments/management/mapper/SystemMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/equipments/management/mapper/shengyaoMedMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/equipments/management/mapper/zhongyaoMedMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/equipments/management/service/Trunctable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/equipments/management/util/POIUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/dbmed.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../src/main/java/dbmed.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/mybatis-conf.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../src/main/java/mybatis-conf.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/2.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/3.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/UI001.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/acceptsample.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/calendar.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/charts.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/diagnosis.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/diagnosisdetail.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/diagnosticDetails.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/diagnosticDetails.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/eqpatientinfo.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/error-log.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/error.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/forms.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/gallery.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/grid.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/invoice.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/js/bootstrap-datetimepicker.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../src/main/webapp/js/bootstrap-datetimepicker.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../src/main/webapp/js/bootstrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/js/custom.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../src/main/webapp/js/custom.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/js/jquery.validate.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../src/main/webapp/js/jquery.validate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../src/main/webapp/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/media.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/medicalRecord.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/patientappli.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../src/main/webapp/cgsqy.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/patientsample.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/build/pdf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/build/pdf.worker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/78-EUC-H.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/78-EUC-V.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/78-H.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/78-RKSJ-H.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/78-RKSJ-V.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/78-V.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/78ms-RKSJ-H.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/78ms-RKSJ-V.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/83pv-RKSJ-H.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/90ms-RKSJ-H.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/90ms-RKSJ-V.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/90msp-RKSJ-H.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/90msp-RKSJ-V.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/90pv-RKSJ-H.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/90pv-RKSJ-V.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/Add-H.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/Add-RKSJ-H.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/Add-RKSJ-V.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/Add-V.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/Adobe-CNS1-0.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/Adobe-CNS1-1.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/Adobe-CNS1-2.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/Adobe-CNS1-3.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/Adobe-CNS1-4.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/Adobe-CNS1-5.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/Adobe-CNS1-6.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/Adobe-CNS1-UCS2.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/Adobe-GB1-0.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/Adobe-GB1-1.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/Adobe-GB1-2.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/Adobe-GB1-3.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/Adobe-GB1-4.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/Adobe-GB1-5.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/Adobe-GB1-UCS2.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/Adobe-Japan1-0.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/Adobe-Japan1-1.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/Adobe-Japan1-2.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/Adobe-Japan1-3.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/Adobe-Japan1-4.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/Adobe-Japan1-5.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/Adobe-Japan1-6.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/Adobe-Japan1-UCS2.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/Adobe-Korea1-0.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/Adobe-Korea1-1.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/Adobe-Korea1-2.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/Adobe-Korea1-UCS2.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/B5-H.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/B5-V.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/B5pc-H.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/B5pc-V.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/CNS-EUC-H.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/CNS-EUC-V.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/CNS1-H.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/CNS1-V.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/CNS2-H.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/CNS2-V.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/ETHK-B5-H.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/ETHK-B5-V.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/ETen-B5-H.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/ETen-B5-V.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/ETenms-B5-H.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/ETenms-B5-V.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/EUC-H.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/EUC-V.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/Ext-H.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/Ext-RKSJ-H.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/Ext-RKSJ-V.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/Ext-V.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/GB-EUC-H.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/GB-EUC-V.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/GB-H.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/GB-V.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/GBK-EUC-H.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/GBK-EUC-V.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/GBK2K-H.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/GBK2K-V.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/GBKp-EUC-H.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/GBKp-EUC-V.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/GBT-EUC-H.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/GBT-EUC-V.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/GBT-H.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/GBT-V.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/GBTpc-EUC-H.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/GBTpc-EUC-V.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/GBpc-EUC-H.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/GBpc-EUC-V.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/H.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/HKdla-B5-H.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/HKdla-B5-V.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/HKdlb-B5-H.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/HKdlb-B5-V.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/HKgccs-B5-H.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/HKgccs-B5-V.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/HKm314-B5-H.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/HKm314-B5-V.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/HKm471-B5-H.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/HKm471-B5-V.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/HKscs-B5-H.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/HKscs-B5-V.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/Hankaku.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/Hiragana.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/KSC-EUC-H.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/KSC-EUC-V.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/KSC-H.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/KSC-Johab-H.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/KSC-Johab-V.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/KSC-V.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/KSCms-UHC-H.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/KSCms-UHC-HW-H.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/KSCms-UHC-HW-V.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/KSCms-UHC-V.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/KSCpc-EUC-H.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/KSCpc-EUC-V.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/Katakana.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/NWP-H.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/NWP-V.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/RKSJ-H.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/RKSJ-V.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/Roman.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/UniCNS-UCS2-H.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/UniCNS-UCS2-V.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/UniCNS-UTF16-H.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/UniCNS-UTF16-V.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/UniCNS-UTF32-H.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/UniCNS-UTF32-V.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/UniCNS-UTF8-H.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/UniCNS-UTF8-V.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/UniGB-UCS2-H.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/UniGB-UCS2-V.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/UniGB-UTF16-H.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/UniGB-UTF16-V.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/UniGB-UTF32-H.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/UniGB-UTF32-V.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/UniGB-UTF8-H.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/UniGB-UTF8-V.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/UniJIS-UCS2-H.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/UniJIS-UCS2-HW-H.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/UniJIS-UCS2-HW-V.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/UniJIS-UCS2-V.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/UniJIS-UTF16-H.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/UniJIS-UTF16-V.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/UniJIS-UTF32-H.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/UniJIS-UTF32-V.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/UniJIS-UTF8-H.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/UniJIS-UTF8-V.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/UniJIS2004-UTF16-H.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/UniJIS2004-UTF16-V.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/UniJIS2004-UTF32-H.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/UniJIS2004-UTF32-V.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/UniJIS2004-UTF8-H.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/UniJIS2004-UTF8-V.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/UniJISPro-UCS2-HW-V.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/UniJISPro-UCS2-V.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/UniJISPro-UTF8-V.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/UniJISX0213-UTF32-H.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/UniJISX0213-UTF32-V.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/UniJISX02132004-UTF32-H.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/UniJISX02132004-UTF32-V.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/UniKS-UCS2-H.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/UniKS-UCS2-V.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/UniKS-UTF16-H.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/UniKS-UTF16-V.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/UniKS-UTF32-H.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/UniKS-UTF32-V.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/UniKS-UTF8-H.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/UniKS-UTF8-V.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/V.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/cmaps/WP-Symbol.bcmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/compatibility.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/compressed.tracemonkey-pldi-09.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/debugger.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/images/annotation-check.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/images/annotation-comment.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/images/annotation-help.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/images/annotation-insert.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/images/annotation-key.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/images/annotation-newparagraph.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/images/annotation-noicon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/images/annotation-note.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/images/annotation-paragraph.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/images/findbarButton-next-rtl.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/images/findbarButton-next-rtl@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/images/findbarButton-next.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/images/findbarButton-next@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/images/findbarButton-previous-rtl.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/images/findbarButton-previous-rtl@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/images/findbarButton-previous.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/images/findbarButton-previous@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/images/grab.cur" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/images/grabbing.cur" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/images/loading-icon.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/images/loading-small.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/images/loading-small@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/images/secondaryToolbarButton-documentProperties.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/images/secondaryToolbarButton-documentProperties@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/images/secondaryToolbarButton-firstPage.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/images/secondaryToolbarButton-firstPage@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/images/secondaryToolbarButton-handTool.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/images/secondaryToolbarButton-handTool@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/images/secondaryToolbarButton-lastPage.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/images/secondaryToolbarButton-lastPage@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/images/secondaryToolbarButton-rotateCcw.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/images/secondaryToolbarButton-rotateCcw@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/images/secondaryToolbarButton-rotateCw.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/images/secondaryToolbarButton-rotateCw@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/images/shadow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/images/texture.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/images/toolbarButton-bookmark.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/images/toolbarButton-bookmark@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/images/toolbarButton-download.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/images/toolbarButton-download@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/images/toolbarButton-menuArrows.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/images/toolbarButton-menuArrows@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/images/toolbarButton-openFile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/images/toolbarButton-openFile@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/images/toolbarButton-pageDown-rtl.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/images/toolbarButton-pageDown-rtl@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/images/toolbarButton-pageDown.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/images/toolbarButton-pageDown@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/images/toolbarButton-pageUp-rtl.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/images/toolbarButton-pageUp-rtl@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/images/toolbarButton-pageUp.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/images/toolbarButton-pageUp@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/images/toolbarButton-presentationMode.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/images/toolbarButton-presentationMode@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/images/toolbarButton-print.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/images/toolbarButton-print@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/images/toolbarButton-search.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/images/toolbarButton-search@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/images/toolbarButton-secondaryToolbarToggle-rtl.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/images/toolbarButton-secondaryToolbarToggle-rtl@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/images/toolbarButton-secondaryToolbarToggle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/images/toolbarButton-secondaryToolbarToggle@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/images/toolbarButton-sidebarToggle-rtl.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/images/toolbarButton-sidebarToggle-rtl@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/images/toolbarButton-sidebarToggle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/images/toolbarButton-sidebarToggle@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/images/toolbarButton-viewAttachments.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/images/toolbarButton-viewAttachments@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/images/toolbarButton-viewOutline-rtl.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/images/toolbarButton-viewOutline-rtl@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/images/toolbarButton-viewOutline.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/images/toolbarButton-viewOutline@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/images/toolbarButton-viewThumbnail.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/images/toolbarButton-viewThumbnail@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/images/toolbarButton-zoomIn.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/images/toolbarButton-zoomIn@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/images/toolbarButton-zoomOut.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/images/toolbarButton-zoomOut@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/images/treeitem-collapsed-rtl.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/images/treeitem-collapsed-rtl@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/images/treeitem-collapsed.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/images/treeitem-collapsed@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/images/treeitem-expanded.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/images/treeitem-expanded@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/l10n.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/locale/ach/viewer.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/locale/af/viewer.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/locale/ak/viewer.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/locale/an/viewer.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/locale/ar/viewer.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/locale/as/viewer.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/locale/ast/viewer.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/locale/az/viewer.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/locale/be/viewer.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/locale/bg/viewer.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/locale/bn-BD/viewer.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/locale/bn-IN/viewer.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/locale/br/viewer.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/locale/bs/viewer.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/locale/ca/viewer.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/locale/cs/viewer.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/locale/csb/viewer.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/locale/cy/viewer.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/locale/da/viewer.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/locale/de/viewer.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/locale/el/viewer.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/locale/en-GB/viewer.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/locale/en-US/viewer.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/locale/en-ZA/viewer.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/locale/eo/viewer.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/locale/es-AR/viewer.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/locale/es-CL/viewer.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/locale/es-ES/viewer.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/locale/es-MX/viewer.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/locale/et/viewer.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/locale/eu/viewer.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/locale/fa/viewer.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/locale/ff/viewer.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/locale/fi/viewer.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/locale/fr/viewer.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/locale/fy-NL/viewer.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/locale/ga-IE/viewer.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/locale/gd/viewer.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/locale/gl/viewer.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/locale/gu-IN/viewer.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/locale/he/viewer.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/locale/hi-IN/viewer.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/locale/hr/viewer.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/locale/hu/viewer.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/locale/hy-AM/viewer.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/locale/id/viewer.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/locale/is/viewer.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/locale/it/viewer.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/locale/ja/viewer.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/locale/ka/viewer.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/locale/kk/viewer.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/locale/km/viewer.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/locale/kn/viewer.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/locale/ko/viewer.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/locale/ku/viewer.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/locale/lg/viewer.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/locale/lij/viewer.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/locale/locale.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/locale/lt/viewer.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/locale/lv/viewer.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/locale/mai/viewer.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/locale/mk/viewer.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/locale/ml/viewer.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/locale/mn/viewer.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/locale/mr/viewer.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/locale/ms/viewer.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/locale/my/viewer.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/locale/nb-NO/viewer.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/locale/nl/viewer.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/locale/nn-NO/viewer.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/locale/nso/viewer.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/locale/oc/viewer.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/locale/or/viewer.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/locale/pa-IN/viewer.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/locale/pl/viewer.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/locale/pt-BR/viewer.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/locale/pt-PT/viewer.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/locale/rm/viewer.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/locale/ro/viewer.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/locale/ru/viewer.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/locale/rw/viewer.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/locale/sah/viewer.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/locale/si/viewer.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/locale/sk/viewer.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/locale/sl/viewer.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/locale/son/viewer.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/locale/sq/viewer.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/locale/sr/viewer.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/locale/sv-SE/viewer.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/locale/sw/viewer.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/locale/ta-LK/viewer.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/locale/ta/viewer.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/locale/te/viewer.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/locale/th/viewer.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/locale/tl/viewer.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/locale/tn/viewer.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/locale/tr/viewer.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/locale/uk/viewer.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/locale/ur/viewer.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/locale/vi/viewer.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/locale/wo/viewer.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/locale/xh/viewer.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/locale/zh-CN/viewer.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/locale/zh-TW/viewer.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/locale/zu/viewer.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/viewer.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/viewer.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/pdf/web/viewer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/post.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/postTask.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/product.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/profile.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../src/main/webapp/register.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/report.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/report.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/scan.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/slicingDesign.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/statement.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/style/bootstrap-datetimepicker.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../src/main/webapp/style/bootstrap-datetimepicker.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/style/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../src/main/webapp/style/bootstrap.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/support.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/tableTemp001.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/tableTemp002.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/tableTemp003.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/tables.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/temp_table001.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/ui.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/userFace.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/userFace001.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/userFace002.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/userFace002.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/userFace002import.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/userFace002shengyao.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/userFace002zhongyao.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/userFace00all.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/widgets1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/widgets2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/widgets3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/wrong.jsp" beforeDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/../../target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="1758776032">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.24" value="1" />
+          <entry key="project.open.time.3" value="1" />
+          <entry key="project.opened" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="java" value="2" />
+          <entry key="js" value="2" />
+          <entry key="jsp" value="5" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JAVA" value="2" />
+          <entry key="JSP" value="5" />
+          <entry key="JavaScript" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="java" value="17" />
+          <entry key="js" value="14" />
+          <entry key="jsp" value="45" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="17" />
+          <entry key="JSP" value="45" />
+          <entry key="JavaScript" value="14" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.js.language.service.starts" />
+      <usages-collector id="statistics.spring.boot.run.usages" />
+      <usages-collector id="statistics.vcs.git.usages" />
+      <usages-collector id="statistics.spring.boot.mvc.usages" />
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../../src/main/webapp/register.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="10" column="59" selection-start-line="10" selection-start-column="59" selection-end-line="10" selection-end-column="59" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../src/main/webapp/cgsqy.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="10" column="57" selection-start-line="10" selection-start-column="57" selection-end-line="10" selection-end-column="57" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../src/main/java/com/equipments/management/controller/EqController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="114" column="30" lean-forward="true" selection-start-line="114" selection-start-column="30" selection-end-line="114" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../src/main/webapp/scmy.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="176">
+              <caret line="8" column="57" selection-start-line="8" selection-start-column="57" selection-end-line="8" selection-end-column="57" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../src/main/webapp/index.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="176">
+              <caret line="8" column="57" selection-start-line="8" selection-start-column="57" selection-end-line="8" selection-end-column="57" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../src/main/webapp/js/jquery.validate.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="161">
+              <caret line="1205" lean-forward="true" selection-start-line="1205" selection-end-line="1205" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>jgzid</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="projectSyncType">
+      <map>
+        <entry key="D:/WeekPlan" value="PREVIEW" />
+        <entry key="D:/test" value="PREVIEW" />
+        <entry key="D:/test/Abroad/abroad" value="PREVIEW" />
+        <entry key="D:/test/WeekPlan" value="PREVIEW" />
+      </map>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/../../src/main/webapp/js/jquery.validate.js" />
+        <option value="$PROJECT_DIR$/../../src/main/java/com/equipments/management/controller/EqController.java" />
+        <option value="$PROJECT_DIR$/../../src/main/webapp/cgsqy.jsp" />
+        <option value="$PROJECT_DIR$/../../src/main/webapp/scmy.jsp" />
+        <option value="$PROJECT_DIR$/../../src/main/webapp/index.jsp" />
+        <option value="$PROJECT_DIR$/../../src/main/webapp/register.jsp" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="481" />
+    <option name="y" value="-18" />
+    <option name="width" value="1935" />
+    <option name="height" value="1040" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="management" type="b2602c69:ProjectViewProjectNode" />
+              <item name="management001" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="management" type="b2602c69:ProjectViewProjectNode" />
+              <item name="management001" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="management" type="b2602c69:ProjectViewProjectNode" />
+              <item name="management001" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="management" type="b2602c69:ProjectViewProjectNode" />
+              <item name="management001" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="management" type="b2602c69:ProjectViewProjectNode" />
+              <item name="management001" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="management" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="management" type="b2602c69:ProjectViewProjectNode" />
+              <item name="management001" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="management" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="management" type="b2602c69:ProjectViewProjectNode" />
+              <item name="management001" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="management" type="b2602c69:ProjectViewProjectNode" />
+              <item name="management001" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="management" type="b2602c69:ProjectViewProjectNode" />
+              <item name="management001" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
+              <item name="icons" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="management" type="b2602c69:ProjectViewProjectNode" />
+              <item name="management001" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="management" type="b2602c69:ProjectViewProjectNode" />
+              <item name="management001" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="management" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="AndroidView" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537230442353" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Downloads\management001\src\main\webapp\img\icons" />
+      <recent name="D:\Downloads\management001\src\main\webapp" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="tomcat8" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.32" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="management:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_management_3" />
+      </server-settings>
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <predefined_log_file id="Tomcat Catalina" enabled="true" />
+      <predefined_log_file id="Tomcat Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="1802" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="management:war exploded" />
+        </option>
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="16ce08df-f43c-452e-9088-c604797f2fc0" name="Default Changelist" comment="" />
+      <created>1537183492732</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1537183492732</updated>
+      <workItem from="1537183494288" duration="412000" />
+      <workItem from="1537186081198" duration="5265000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="5677000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2537112" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32941177" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32941177" />
+      <window_info anchor="bottom" id="Spring" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32941177" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" />
+      <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="14" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Maven Projects" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Bean Validation" order="9" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/../../src/main/java/com/equipments/management/util/BeanUtil.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../src/main/webapp/js/jquery.cleditor.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../src/main/webapp/js/jquery.validate.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="1205" lean-forward="true" selection-start-line="1205" selection-end-line="1205" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../src/main/java/com/equipments/management/controller/EqController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="114" column="30" lean-forward="true" selection-start-line="114" selection-start-column="30" selection-end-line="114" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../src/main/webapp/cgsqy.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="57" selection-start-line="10" selection-start-column="57" selection-end-line="10" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../src/main/webapp/scmy.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="57" selection-start-line="8" selection-start-column="57" selection-end-line="8" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../src/main/webapp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="57" selection-start-line="8" selection-start-column="57" selection-end-line="8" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../src/main/webapp/register.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="59" selection-start-line="10" selection-start-column="59" selection-end-line="10" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>management:war exploded</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>grails-3.1.16</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>management</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: aopalliance:aopalliance:1.0</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

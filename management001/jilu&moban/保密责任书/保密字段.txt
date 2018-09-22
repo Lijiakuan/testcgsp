@@ -1,0 +1,25 @@
+姓名  	${name}
+职级  	${zhiji}
+部职别  ${buzhibie}
+到访国家 ${tarcountry}
+（地区） ${tarcity}
+
+在国（境）外时间    离境：${jwtlbeg}
+					入境：${jwtlend}
+                    
+设备类型   ${xddzsblx1}  ${xddzsblx2} 
+品牌型号   ${xddzsbxh1}  ${xddzsbxh2}
+涉密等级   ${xddzsbsmdj1} ${xddzsbsmdj2}
+            ${xddzsbyf}
+未携带笔记本电脑和涉密移动电子设备 ${duihao1} (显示对号1与否)
+
+资料名称   ${xdsmzlmc1}  ${xdsmzlmc2}
+	
+份数	   ${xdsmzlfs1}  ${xdsmzlfs2}
+
+涉密等级   ${xdsmzlsmdj1}  ${xdsmzlsmdj2}
+           
+		   
+		   ${xdsmzlyf}
+
+未携带任何涉密资料、书籍   ${duihao2} (显示对号2与否)
